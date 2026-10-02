@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
@@ -153,6 +153,16 @@
     <Content Include="עמוד גיטרה.html" />
     <Content Include="עמוד כלי נשיפה.html" />
     <Content Include="עמוד תופים.html" />
+    <Content Include="עמוד אודות.html" />
+    <Content Include="css\StyleSheet1.css" />
+    <Content Include="pics\about.jpg" />
+    <Content Include="pics\drums.jpg" />
+    <Content Include="pics\guitar.jpg" />
+    <Content Include="pics\home_bg.jpg" />
+    <Content Include="pics\marcin.jpg" />
+    <Content Include="pics\marcin_bite_your_nails.jpg" />
+    <Content Include="pics\marcin_bite_your_nails.mp4" />
+    <Content Include="pics\wind_instruments.jpg" />
     <None Include="Scripts\jquery-3.7.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.0.js" />
     <Content Include="Scripts\jquery-3.7.0.min.js" />

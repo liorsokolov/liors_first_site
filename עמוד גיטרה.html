@@ -1,25 +1,102 @@
-﻿<!DOCTYPE html>
-<html dir="rtl">
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
 <head>
-
     <meta charset="utf-8" />
-    <title>עמוד גיטרה</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>עולם כלי הנגינה - עמוד גיטרה</title>
+    <!-- קישור לקובץ העיצוב החיצוני המשותף -->
+    <link rel="stylesheet" href="css/StyleSheet1.css" />
+
+    <!-- עיצוב ייחודי לעמוד גיטרה בלבד בתוך ה-head -->
+    <style>
+        body {
+            background-color: #ebf5fb;
+        }
+
+        .guitar-quote {
+            background-color: #eaf2f8;
+            border-right: 5px solid #2980b9;
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+            font-style: italic;
+        }
+
+        .highlight-names {
+            font-weight: bold;
+            color: #d35400;
+        }
+
+        .footer-text {
+            text-align: center;
+            margin-bottom: 0;
+        }
+    </style>
 </head>
-<body style="background-color: lightblue">
-    <h1 style="background-color: orange; text-align: center">גיטרה</h1>
-    <hr />
-    <p>
-        הגיטרה היא כלי נגינה אתיק מאוד והגרסאות הראשונות שאפשר לזהות כגיטרה הופיעו באירופה במאה ה15. 
-        לגיטרה יש הרבה סוגים המקורות ביותר הם גיטרה קלאסית, אקוסטית וחשמלית כל אחד משמש לצליל קצת שונה ולסוג מוזיקה שונה כגון: פופ, רוק, מוזיקה קלאסית ופלמנקו. יש גם נגנים מפורסמים על ידי הגיטרה כמו:
-        Marcin,  Luca Stricagnoli, AkStar
-        שיותר מפורסמים על סגנון הנגינה "טאפינג" ותיפוף על הגיטרה ועוד דברים קיצוניים שאף אחד לא חשב שאפשר לעשות על גיטרה.
-    </p>
-    <br />
-    <p>
-        ומהצד הקלסי יותר של נגני גיטרה מפורסמים:
-        ג׳ימי הנדריקס , אריק קלפטון, קרלוס סנטנה,אד שירן, אנדרס סגוביה
-        הם דוגמאות לנגנים שהשפיעו רבות על עולם הגיטרה.
-        הגיטרה היא כלי נגינה רב־שימושי שהתפתח במשך מאות שנים והפך לאחד הכלים המרכזיים במוזיקה המודרנית.
-    </p>
+<body>
+
+    <!-- סרגל ניווט -->
+    <nav class="navbar">
+        <a href="עמוד בית.html">עמוד הבית</a>
+        <a href="עמוד גיטרה.html" class="active">גיטרה</a>
+        <a href="עמוד כלי נשיפה.html">כלי נשיפה</a>
+        <a href="עמוד תופים.html">תופים</a>
+        <a href="עמוד אודות.html">אודות</a>
+    </nav>
+
+    <!-- תוכן העמוד -->
+    <div class="container">
+        <h1>גיטרה - כלי מיתר על זמני</h1>
+        <hr />
+
+        <!-- תמונת הגיטרה בעמוד ללא רקע -->
+        <div class="image-box">
+            <img src="pics/guitar.jpg" alt="גיטרה אקוסטית" />
+            <p class="image-caption">גיטרה - מגוון צלילים מרהיב בין מיתרי ניילון ומתכת</p>
+        </div>
+
+        <p>
+            הגיטרה היא כלי נגינה עתיק מאוד והגרסאות הראשונות שאפשר לזהות כגיטרה הופיעו באירופה במאה ה-15. 
+            לגיטרה יש הרבה סוגים, המוכרים ביותר הם גיטרה קלאסית, אקוסטית וחשמלית – כל אחד משמש לצליל קצת שונה ולסוג מוזיקה שונה כגון: פופ, רוק, מוזיקה קלאסית ופלמנקו.
+        </p>
+
+        <div class="guitar-quote">
+            "הגיטרה היא כמו תזמורת קטנה – יש לה פוליפוניה, צבעים ואינטימיות שאין לשום כלי אחר."
+        </div>
+
+        <h2>סגנונות נגינה וטכניקות מתקדמות</h2>
+        <p>
+            ישנם נגנים שהתפרסמו בזכות שליטה יוצאת דופן וטכניקות ייחודיות כמו:
+            <span class="highlight-names">Marcin, Luca Stricagnoli, AkStar</span>.
+            הם מוכרים בעיקר בזכות סגנון הנגינה "פינגרסטייל", "טאפינג" ותיפוף על גוף הגיטרה, ועוד ביצועים מרהיבים שמרחיבים את גבולות היכולת של הגיטרה.
+        </p>
+
+        <!-- סרטון וידאו: Marcin -->
+        <div class="video-box">
+            <h3>סרטון הדגמה: נגינת גיטרה וירטואוזית - Marcin</h3>
+            <video controls poster="pics/marcin_bite_your_nails.jpg">
+                <source src="pics/marcin_bite_your_nails.mp4" type="video/mp4" />
+                הדפדפן שלך אינו תומך בהצגת וידאו.
+            </video>
+            <p class="image-caption">Marcin Patrzałek בביצוע וירטואוזי המדגים פינגרסטייל, טאפינג ותיפוף על גוף הגיטרה</p>
+            <p>
+                <a href="https://www.youtube.com/watch?v=lQHKmxMYgm0" target="_blank" class="btn-link">צפייה בקליפ הרשמי ב-YouTube &larr;</a>
+            </p>
+        </div>
+
+        <h2>נגני גיטרה אגדיים בהיסטוריה</h2>
+        <p>
+            ומהצד הקלאסי והרוק של נגני גיטרה מפורסמים:
+            <span class="highlight-names">ג׳ימי הנדריקס, אריק קלפטון, קרלוס סנטנה, אד שירן, אנדרס סגוביה</span>.
+            הם דוגמאות לנגנים שהשפיעו רבות על עולם הגיטרה. הגיטרה היא כלי נגינה רב־שימושי שהתפתח במשך מאות שנים והפך לאחד הכלים המרכזיים במוזיקה המודרנית.
+        </p>
+
+        <hr />
+
+        <footer>
+            <p class="footer-text">&copy; כל הזכויות שמורות - ליאור | אתר כלי נגינה</p>
+        </footer>
+    </div>
+
 </body>
 </html>

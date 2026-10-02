@@ -1,5 +1,234 @@
-﻿body {
-  <body style="background-color: lightsteelblue;"></body>
-    <h1 style="background-color: orange;"></h1>
-    background-image:url()
+/* ==========================================================================
+   קובץ עיצוב חיצוני (External CSS) - אתר כלי נגינה של ליאור
+   משותף לכל דפי האתר
+   ========================================================================== */
+
+/* איפוס בסיסי והגדרות כלליות */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media print {
+    * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+    .navbar {
+        position: static !important;
+        box-shadow: none !important;
+    }
+}
+
+body {
+    font-family: 'Segoe UI', Arial, Tahoma, Geneva, Verdana, sans-serif;
+    direction: rtl;
+    text-align: right;
+    color: #2c3e50;
+    line-height: 1.8;
+    background-color: #f4f6f9;
+    min-height: 100vh;
+}
+
+/* סרגל ניווט עליון משותף לכל הדפים */
+.navbar {
+    background-color: #1a252f;
+    padding: 14px 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 8px 18px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #e67e22;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.navbar a.active {
+    background-color: #d35400;
+    color: #ffffff;
+}
+
+/* מעטפת התוכן המרכזית */
+.container {
+    max-width: 900px;
+    margin: 35px auto;
+    padding: 35px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* כותרת ראשית מעוצבת */
+h1 {
+    background-color: #f39c12;
+    color: #ffffff;
+    text-align: center;
+    padding: 16px 20px;
+    border-radius: 8px;
+    font-size: 2.2rem;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(243, 156, 18, 0.3);
+}
+
+/* כותרות משניות */
+h2 {
+    color: #2c3e50;
+    margin-top: 25px;
+    margin-bottom: 12px;
+    font-size: 1.5rem;
+    border-right: 4px solid #f39c12;
+    padding-right: 12px;
+}
+
+h3 {
+    color: #34495e;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+}
+
+/* קו מפריד מעוצב */
+hr {
+    border: none;
+    height: 3px;
+    background: linear-gradient(to right, transparent, #f39c12, transparent);
+    margin: 25px 0;
+}
+
+/* פסקאות טקסט */
+p {
+    font-size: 1.08rem;
+    margin-bottom: 16px;
+    text-align: justify;
+    color: #333333;
+}
+
+/* תיבת תמונה מעוצבת */
+.image-box {
+    text-align: center;
+    margin: 25px 0;
+}
+
+.image-box img {
+    max-width: 100%;
+    width: 650px;
+    height: auto;
+    border-radius: 10px;
+    border: 3px solid #f39c12;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+.image-caption {
+    font-size: 0.95rem;
+    color: #7f8c8d;
+    margin-top: 8px;
+    font-style: italic;
+}
+
+/* תיבת סרטון וידאו מעוצבת */
+.video-box {
+    text-align: center;
+    margin: 30px 0;
+    padding: 20px;
+    background-color: #fcfcfc;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+}
+
+.video-box video,
+.video-box iframe {
+    max-width: 100%;
+    width: 650px;
+    height: 365px;
+    border-radius: 8px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    display: block;
+    margin: 0 auto 12px auto;
+    border: none;
+}
+
+/* רשימות מעוצבות */
+ul, ol {
+    margin-right: 25px;
+    margin-bottom: 18px;
+}
+
+li {
+    margin-bottom: 8px;
+    font-size: 1.05rem;
+}
+
+/* כפתורים וקישורים מעוצבים בתוך התוכן */
+.btn-link {
+    display: inline-block;
+    background-color: #e67e22;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 22px;
+    border-radius: 6px;
+    font-weight: bold;
+    margin: 10px 5px;
+    transition: background-color 0.2s ease;
+}
+
+.btn-link:hover {
+    background-color: #d35400;
+}
+
+/* כרטיסי מידע */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+    margin: 25px 0;
+}
+
+.card {
+    background: #fdfefe;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 18px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #d35400;
+}
+
+/* תחתית עמוד (Footer) */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    color: #7f8c8d;
+    font-size: 0.95rem;
+    border-top: 1px solid #e0e0e0;
 }
